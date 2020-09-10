@@ -36,7 +36,7 @@ After installation enter the following in the three lines in the command line (A
 
 ## Install via Make (Linux)
 
-` git clone https://jira.iais.fraunhofer.de/stash/projects/KDPYT/repos/SnippetLibrary-JupyterLab`
+` git clone https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension.git`
 ` cd snippetlib_jl`
 ` git checkout master`
 ` make install`

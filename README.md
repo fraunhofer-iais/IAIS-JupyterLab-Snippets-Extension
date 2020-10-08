@@ -11,10 +11,13 @@ This Jupyter Lab extension is based on the [jupyterlab-snippets](https://github.
 Focus of the provided snippets is helping to get started (or to get more productive) on data science tasks. The menu provides several snippets ordered by typical task groups used for exploring and visualizing data. 
 
 The default menu provides the items:
-* `Data` which provides snippets to read, write and transform data
-* `Modelling` which provides snippets to train ML models (mostly based on `sklearn`). You'll find examples for classification, regression and clustering
-* `Plotting` which provides some regularly used snippets for `matplotlib`, `bokeh` and the `pandas` interface
-* `Utils` which provides some snippets which do not fit into the former categories but are still helpful
+* `Data` which provides snippets to read, write and transform data.
+
+* `Modelling` which provides snippets to train ML models (mostly based on `sklearn`). You'll find examples for classification, regression and clustering.
+
+* `Plotting` which provides some regularly used snippets for `matplotlib`, `bokeh` and the `pandas` interface.
+
+* `Utils` which provides some snippets which do not fit into the former categories but are still helpful.
 
 With the jupyter extension a set of base snippets are provided, for which we are mostly sure, that they do their job as described. Also, it's also possible to add your own snippets, either by copy-pasting them or by uploadling them from a python file.
 
@@ -36,9 +39,12 @@ After installation enter the following in the three lines in the command line (A
 
 ## Install via Make (Linux)
 
-` git clone https://jira.iais.fraunhofer.de/stash/projects/KDPYT/repos/SnippetLibrary-JupyterLab`
+` git clone https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension.git`
+
 ` cd snippetlib_jl`
+
 ` git checkout master`
+
 ` make install`
 
 
@@ -46,7 +52,9 @@ After installation enter the following in the three lines in the command line (A
 ## Start Jupyter Notebook 
 
 • **Windows**: Open Anaconda prompt and type "jupyter notebook".
+
 • **Linux**: Open terminal and type "jupyter notebook“.
+
 • **The Jupyter front-end should open in a browser window**.
 
 ## How to add your own snippets
@@ -70,7 +78,7 @@ Refresh the page and on the Snippets menu you should see the newly added snippet
 ![Add your own snippets](add_snippets.png)
 
 # Credits and Acknolegements
-The development of this Jupyter extension was supported by the Fraunhofer Lighhouse Project [Machine Learning for Production (ML4P)](https://www.fraunhofer.de/de/forschung/fraunhofer-initiativen/fraunhofer-leitprojekte/ml4p.html). The main development has been carried out by the Knowledge Discovery Department of the [Fraunhofer IAIS](https://www.iais.fraunhofer.de).
+The development of this Jupyter extension was supported by the Fraunhofer Lighhouse Project [Machine Learning for Production (ML4P)](https://www.fraunhofer.de/de/forschung/fraunhofer-initiativen/fraunhofer-leitprojekte/ml4p.html). The main development has been carried out by the Knowledge Discovery Department of the [Fraunhofer IAIS](https://www.iais.fraunhofer.de). We would like to thank Daniel Paurat for the original idea of the project.
 
 # Contact information
 If you're interested in supporting the further development of this extension or if you need support for the usage please contact [snippets@iais.fraunhofer.de](mailto:snippets@iais.fraunofer.de).

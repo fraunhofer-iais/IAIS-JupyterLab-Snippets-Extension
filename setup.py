@@ -76,11 +76,11 @@ setup_args = dict(
     ],
     zip_safe=False,
     include_package_data=True,
-    license="BSD-3-Clause",
+    license="MIT License",
     platforms="Linux, Mac OS X, Windows",
     keywords=["Jupyter", "JupyterLab"],
     classifiers=[
-        "License :: OSI Approved :: BSD License",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",

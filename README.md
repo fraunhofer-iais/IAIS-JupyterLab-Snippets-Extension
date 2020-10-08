@@ -4,7 +4,7 @@
 
 The idea of the Snippet Library is to create a tool for rapid prototyping with the aim of quickly and easily developing data analysis workflows. It adds a customizable menu to the Jupyter notebooks to insert code snippets, code examples and boilerplate code.
 
-![Snippets Showcase](showcase.png)
+![Snippets Showcase](https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension/raw/master/showcase.png)
 
 This Jupyter Lab extension is based on the [jupyterlab-snippets](https://github.com/QuantStack/jupyterlab-snippets) extension. How do I read a `csv` file? There´s a snippet for that. How do I visualize missing values in a pandas dataframe? There´s a snippet for that. How do I plot the correlation matrix of my pandas dataframe (and make it look good)?. There's a snippet for that. You get the idea.
 
@@ -75,7 +75,7 @@ To create new snippets,on the jupyter notebook,paste the following in a new cell
 
 Refresh the page and on the Snippets menu you should see the newly added snippet.
 
-![Add your own snippets](add_snippets.png)
+![Add your own snippets](https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension/raw/master/add_snippets.png)
 
 # Credits and Acknolegements
 The development of this Jupyter extension was supported by the Fraunhofer Lighhouse Project [Machine Learning for Production (ML4P)](https://www.fraunhofer.de/de/forschung/fraunhofer-initiativen/fraunhofer-leitprojekte/ml4p.html). The main development has been carried out by the Knowledge Discovery Department of the [Fraunhofer IAIS](https://www.iais.fraunhofer.de). We would like to thank Daniel Paurat for the original idea of the project.

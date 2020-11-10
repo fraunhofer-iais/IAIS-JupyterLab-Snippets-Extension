@@ -2,7 +2,7 @@
 
 ----
 
-The idea of the Snippet Library is to create a tool for rapid prototyping with the aim of quickly and easily developing data analysis workflows. It adds a customizable menu to the Jupyter notebooks to insert code snippets, code examples and boilerplate code.
+The idea of the Snippet Library is to create a tool for rapid prototyping with the aim of quickly and easily developing data analysis workflows. It adds a customizable menu to insert code snippets, code examples and boilerplate code on notebooks.
 
 ![Snippets Showcase](https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension/raw/master/showcase.png)
 
@@ -30,6 +30,8 @@ The follwoing Prerequisites must be installed:
 `Jupyterlab 2.X` 
 
 `(Python 3.X)`
+
+`Nodejs`
  
 
 After installation enter the following in the three lines in the command line (Anaconda Prompt for Windows):
@@ -37,11 +39,11 @@ After installation enter the following in the three lines in the command line (A
 `jupyter lab build`
 
 
-## Install via Make (Linux)
+## Install via Make 
 
 ` git clone https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension.git`
 
-` cd snippetlib_jl`
+` cd IAIS-JupyterLab-Snippets-Extension`
 
 ` git checkout master`
 
@@ -51,9 +53,9 @@ After installation enter the following in the three lines in the command line (A
 # Operating instructions
 ## Start Jupyter Notebook 
 
-• **Windows**: Open Anaconda prompt and type "jupyter notebook".
+• **Windows**: Open Anaconda prompt and type "jupyter lab".
 
-• **Linux**: Open terminal and type "jupyter notebook“.
+• **Linux**: Open terminal and type "jupyter lab“.
 
 • **The Jupyter front-end should open in a browser window**.
 
@@ -81,6 +83,6 @@ Refresh the page and on the Snippets menu you should see the newly added snippet
 The development of this Jupyter extension was supported by the Fraunhofer Lighhouse Project [Machine Learning for Production (ML4P)](https://www.fraunhofer.de/de/forschung/fraunhofer-initiativen/fraunhofer-leitprojekte/ml4p.html). The main development has been carried out by the Knowledge Discovery Department of the [Fraunhofer IAIS](https://www.iais.fraunhofer.de). We would like to thank Daniel Paurat for the original idea of the project.
 
 # Contact information
-If you're interested in supporting the further development of this extension or if you need support for the usage please contact [snippets@iais.fraunhofer.de](mailto:snippets@iais.fraunofer.de).
+If you're interested in supporting the further development of this extension or if you need support for the usage please contact [snippets@iais.fraunhofer.de](mailto:snippets@iais.fraunhofer.de).
 
 

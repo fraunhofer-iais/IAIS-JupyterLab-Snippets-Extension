@@ -1,18 +1,18 @@
 {
   "name": "snippetlib_jl",
-  "version": "0.3.2",
+  "version": "1.7.0",
   "description": "Snippets Extension for JupyterLab",
   "keywords": [
     "jupyter",
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/QuantStack/jupyterlab-snippets",
+  "homepage": "",
   "bugs": {
-    "url": "https://github.com/QuantStack/jupyterlab-snippets/issues"
+    "url": ""
   },
-  "license": "BSD-3-Clause",
-  "author": "QuantStack",
+  "license": "",
+  "author": "",
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
@@ -22,7 +22,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/QuantStack/jupyterlab-snippets.git"
+    "url": ""
   },
   "scripts": {
     "build": "jlpm run build:lib",
@@ -31,7 +31,7 @@
     "build:all": "jlpm run build:labextension",
     "clean": "jlpm run clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
-    "clean:labextension": "rimraf jupyterlab-snippets/labextension",
+    "clean:labextension": "rimraf snippetlib_jl/labextension",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
     "prepare": "jlpm run clean && jlpm run build",
     "watch": "tsc -w"

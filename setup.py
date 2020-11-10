@@ -17,17 +17,18 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 name="snippetlib_jl"
 
 # Ensure a valid python version
-ensure_python(">=3.6")
+ensure_python(">=3.0")
 
 # Get our version
-version = "1"
-snapshot_version = os.environ.get('SNAPSHOT_VERSION')
 
-if snapshot_version != None:
-  version = version + "." + snapshot_version
-else:
-  version = version + "0" + str(snapshot_version)
-# version = get_version(os.path.join(name, "_version.py"))
+# version = "1"
+# snapshot_version = None
+
+# if snapshot_version != None:
+#   version = version + "." + snapshot_version
+# else:
+#   version = version + "0" + str(snapshot_version)
+version = get_version(os.path.join(name, "_version.py"))
 
 lab_path = os.path.join(HERE, name, "labextension")
 
@@ -48,15 +49,15 @@ data_files_spec = [
      "jupyter-config", "snippetlib_jl.json"),
 ]
 
-# cmdclass = create_cmdclass("jsdeps",
-#     package_data_spec=package_data_spec,
-#     data_files_spec=data_files_spec
-# )
+cmdclass = create_cmdclass("jsdeps",
+    package_data_spec=package_data_spec,
+    data_files_spec=data_files_spec
+)
 
-# cmdclass["jsdeps"] = combine_commands(
-#     install_npm(HERE, build_cmd="build:all", npm=["jlpm"]),
-#     ensure_targets(jstargets),
-# )
+cmdclass["jsdeps"] = combine_commands(
+    install_npm(HERE, build_cmd="build:all", npm=["jlpm"]),
+    ensure_targets(jstargets),
+)
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -89,7 +90,7 @@ setup_args = dict(
         "Framework :: Jupyter",
     ],
 )
-# cmdclass=cmdclass,
+cmdclass=cmdclass,
 
 if __name__ == '__main__':
     setuptools.setup(**setup_args)

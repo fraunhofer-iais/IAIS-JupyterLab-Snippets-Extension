@@ -10,17 +10,17 @@ install: wheel
 	jupyter labextension link .
 	jlpm build 
 	jupyter lab build 
+
+install_configure:
+
+	pip install snippetlib_jl
+	jupyter serverextension enable --py snippetlib_jl
+	jlpm
+	jlpm build
+	jupyter labextension link .
+	jlpm build
+	jupyter lab build
 	
-
-Base: 
-	git clone https://jira.iais.fraunhofer.de/stash/scm/kdpyt/snippetsbase.git
-	cp -r snippetsbase/Base-Snippets/* snippetlib/menu/KD-Snippets/
-	
-
-Special: 
-	git clone https://jira.iais.fraunhofer.de/stash/scm/kdpyt/snippetsspecial.git
-	cp -r snippetsspecial/Special-Snippets/* snippetlib/menu/KD-Snippets/
-
 install_develop: wheel 
 
 	pip uninstall -y snippetlib_jl || true

@@ -32,14 +32,13 @@ The follwoing Prerequisites must be installed:
 `(Python 3.X)`
 
 `Nodejs`
+
+`jlpm`
  
 
-After installation enter the following in the three lines in the command line (Anaconda Prompt for Windows):
+# Installation
 
-`jupyter lab build`
-
-
-## Install via Make 
+## Manual installation of frontend and backend extension from git (Recommenced)
 
 ` git clone https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension.git`
 
@@ -47,7 +46,26 @@ After installation enter the following in the three lines in the command line (A
 
 ` git checkout master`
 
-` make install`
+` make install_configure`
+
+
+You can also run commands manually, 
+
+` pip install snippetlib_jl`
+
+` jupyter serverextension enable --py snippetlib_jl`
+
+` jlpm`
+
+` jlpm build`
+
+` jupyter labextension link .`
+
+` jlpm build`
+
+` jupyter lab build`
+
+
 
 
 # Operating instructions

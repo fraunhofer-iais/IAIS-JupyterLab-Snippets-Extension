@@ -21,18 +21,18 @@ class SnippetsLoader:
         
     def collect_snippets(self):
         snippets = []
-        base = [('Base imports.py',),('How to create new snippets.py',),('How to upload your snippets.py',)]
+        base = [('How to create new snippets.py',),('How to upload your snippets.py',),('Base imports.py',)]
         for root_path in self.snippet_paths:
             for dirpath, dirnames, filenames in os.walk(root_path, followlinks=True):
                 for f in filenames:
                     fullpath = PurePath(dirpath).relative_to(root_path).joinpath(f)
 
                     if fullpath.parts not in snippets:
-                        if fullpath.parts in base:
+                        if fullpath.parts in base or fullpath.parts in ['__pycache__']:
                             pass
                         else:
                             snippets.append(fullpath.parts)
-        snippets.sort()
+        # snippets.sort()
         snippets.extend(base)
         snippets = self.clean_snippets_list(snippets)
         return snippets

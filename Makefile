@@ -11,9 +11,10 @@ install: wheel
 	jlpm build 
 	jupyter lab build 
 
-install_configure:
+install_configure: wheel
 
-	pip install snippetlib_jl
+	# pip install snippetlib_jl
+	pip install dist/snippetlib_jl-*.whl
 	jupyter serverextension enable --py snippetlib_jl
 	jlpm
 	jlpm build

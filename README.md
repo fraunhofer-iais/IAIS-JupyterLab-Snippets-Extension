@@ -51,7 +51,7 @@ The follwoing Prerequisites must be installed:
 
 You can also run commands manually, 
 
-` pip install snippetlib_jl`
+` pip install snippetlib-jl`
 
 ` jupyter serverextension enable --py snippetlib_jl`
 

@@ -1,6 +1,6 @@
-Metadata-Version: 1.7.1
+Metadata-Version: 1.7.2
 Name: snippetlib_jl
-Version: 1.7.1
+Version: 1.7.2
 Summary: Snippet Extension for JupyterLab (based on snippet extension by UantStack)
 Home-page: https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension
 Author: 

@@ -38,7 +38,15 @@ The following Prerequisites must be installed:
 
 # Installation
 
-## Manual installation of frontend and backend extension from git (Recommenced)
+For the snippet library to work for Jupyter Lab, two packages must be installed which are the `server extension` and the `labextension` for the frontend. 
+
+Install the server extension of the snippet library from Pypi with the command 
+
+` pip install snippetlib-jl`
+
+For the frontend it is recommended to install it from git as follows. 
+
+## For Linux/macOS users
 
 ` git clone https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension.git`
 
@@ -48,8 +56,18 @@ The following Prerequisites must be installed:
 
 ` make install_configure`
 
+## For Windows users
 
-You can also run commands manually, 
+` git clone https://github.com/fraunhofer-iais/IAIS-JupyterLab-Snippets-Extension.git`
+
+` cd IAIS-JupyterLab-Snippets-Extension`
+
+` git checkout master`
+
+` build_snippetlib_jl.bat`
+
+
+## Or, you can run all installation commands manually as follows 
 
 ` pip install snippetlib-jl`
 

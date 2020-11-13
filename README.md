@@ -8,7 +8,7 @@ The idea of the Snippet Library is to create a tool for rapid prototyping with t
 
 This Jupyter Lab extension is based on the [jupyterlab-snippets](https://github.com/QuantStack/jupyterlab-snippets) extension. How do I read a `csv` file? There´s a snippet for that. How do I visualize missing values in a pandas dataframe? There´s a snippet for that. How do I plot the correlation matrix of my pandas dataframe (and make it look good)?. There's a snippet for that. You get the idea.
 
-Focus of the provided snippets is helping to get started (or to get more productive) on data science tasks. The menu provides several snippets ordered by typical task groups used for exploring and visualizing data. 
+The focus of the provided snippets is helping to get started (or to get more productive) on data science tasks. The menu provides several snippets ordered by typical task groups used for exploring and visualizing data. 
 
 The default menu provides the items:
 * `Data` which provides snippets to read, write and transform data.
@@ -19,11 +19,11 @@ The default menu provides the items:
 
 * `Utils` which provides some snippets which do not fit into the former categories but are still helpful.
 
-With the jupyter extension a set of base snippets are provided, for which we are mostly sure, that they do their job as described. Also, it's also possible to add your own snippets, either by copy-pasting them or by uploadling them from a python file.
+With the jupyter extension a set of base snippets are provided, for which we are mostly sure, that they do their job as described. Also, it's possible to add your own snippets, either by copy-pasting them or by uploading them from a python file.
 
 # Configuration 
 
-The follwoing Prerequisites must be installed: 
+The following Prerequisites must be installed: 
 
 `Anaconda` 
 
@@ -79,7 +79,7 @@ You can also run commands manually,
 
 ## How to add your own snippets
 
-To upload a new snippet on the jupyter notebook,paste the following in a new cell. 
+To upload a new snippet on the jupyter notebook, paste the following in a new cell. 
 
 `from snippetlib_jl import upload_snippet as us`
 
